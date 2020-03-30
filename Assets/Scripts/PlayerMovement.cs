@@ -22,15 +22,22 @@ public class PlayerMovement : MonoBehaviour
       animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
       if(Input.GetButtonDown("Jump")){
-        jump = true;
+            jump = true;
+            animator.SetBool("Jump", true);
       }
       
     }
-    
+
+    public void OnLanding()
+	{
+        animator.SetBool("Jump", false);
+    }
+
     void FixedUpdate(){
     	
     	// Move player
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
+        
     }
 }

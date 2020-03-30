@@ -295,8 +295,8 @@ BoxCollider2D:
   m_Offset: {x: 0.25186777, y: 6.394944}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.6189316, y: 0.000000013233989}
-    oldSize: {x: 9.072201, y: 11.530001}
+    pivot: {x: 0.50881654, y: 0.0084926}
+    oldSize: {x: 4.94, y: 12.146371}
     newSize: {x: 7.174119, y: 9.7300005}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -364,7 +364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557778965}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.4, y: -13.53, z: -1.1767082}
+  m_LocalPosition: {x: -11.52, y: -13.6, z: -1.1767082}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1001788403}
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b61518838f34f82939a2837cd8ee48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 1200
+  m_JumpForce: 7500
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.078
   m_AirControl: 1
@@ -415,7 +415,18 @@ MonoBehaviour:
   m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 557778966}
+        m_MethodName: OnLanding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -581,7 +592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089094044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.33, y: 0.07, z: 0}
+  m_LocalPosition: {x: -0.69, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 557778971}
