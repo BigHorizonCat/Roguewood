@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 557778973}
   animator: {fileID: 557778972}
-  runSpeed: 600
+  runSpeed: 500
 --- !u!50 &557778967
 Rigidbody2D:
   serializedVersion: 4
@@ -295,8 +295,8 @@ BoxCollider2D:
   m_Offset: {x: 0.25186777, y: 6.394944}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.6189316, y: 0.000000013233989}
-    oldSize: {x: 9.072201, y: 11.530001}
+    pivot: {x: 0.3762618, y: -0.00000013968378}
+    oldSize: {x: 4.0409803, y: 11.47}
     newSize: {x: 7.174119, y: 9.7300005}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
